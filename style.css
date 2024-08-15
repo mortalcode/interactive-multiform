@@ -1,0 +1,151 @@
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #5856d6; /* Main background color */
+  padding: 20px 15px;
+  color: #fff;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  background-color: #6c63ff; /* Step number background */
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-right: 15px;
+}
+
+.step-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.active .step-number {
+  background-color: #00bfa6; /* Active step number background */
+}
+
+.active .step-label {
+  font-weight: bold;
+}
+
+/* Decorative elements */
+.sidebar:before,
+.sidebar:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.sidebar:before {
+  width: 100px;
+  height: 100px;
+  background-color: #ff7f4f; /* Bottom decoration color */
+  bottom: 0;
+  left: -30px;
+}
+
+.sidebar:after {
+  width: 70px;
+  height: 70px;
+  background-color: #fccc63; /* Top decoration color */
+  top: -20px;
+  right: -20px;
+}
+
+.form-container {
+  flex: 1;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+p {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 12px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input[type="email"]:focus {
+  border: 1px solid #5856d6;
+}
+
+input[type="tel"] {
+  border: 1px solid #ff6b6b;
+}
+
+.error {
+  color: #ff6b6b;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #5856d6;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 150px;
+  align-self: flex-end;
+}
+
+button:hover {
+  background-color: #4744d6;
+}
